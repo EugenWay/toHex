@@ -12,7 +12,7 @@ async function main() {
     const wsProvider = new WsProvider('wss://rpc.polkadot.io');
     const api = await ApiPromise.create({ provider: wsProvider });
 
-    await toHex(data, api);
+    toHex(data, api);
 }
 
 function toHex (data, api) {
